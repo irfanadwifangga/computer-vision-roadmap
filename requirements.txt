@@ -1,0 +1,5 @@
+# Dependency utama yang sudah digunakan oleh contoh kode saat ini.
+# Instal dengan: python -m pip install -r requirements.txt
+opencv-python
+numpy
+matplotlib

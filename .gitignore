@@ -1,0 +1,118 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# =========================
+# Virtual environment
+# =========================
+
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# =========================
+# Python packaging
+# =========================
+
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# =========================
+# Environment and secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+*.secret
+secrets/
+credentials/
+config.local.*
+
+# =========================
+# Jupyter Notebook
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# IDE and editor
+# =========================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# Operating system
+# =========================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs
+# =========================
+
+*.log
+logs/
+
+# =========================
+# Generated output
+# =========================
+
+output/
+outputs/
+runs/
+results/
+predictions/
+
+# =========================
+# Computer vision temporary files
+# =========================
+
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.jpg
+*.jpeg
+*.png
+
+# Keep sample assets if intentionally committed
+!day-02-image-basics/assets/
+!day-02-image-basics/assets/*.jpg
+!day-02-image-basics/assets/*.jpeg
+!day-02-image-basics/assets/*.png
+
+# =========================
+# Dataset files
+# =========================
+
+datasets/
+dataset/
+data/raw/
+data/processed/
+
+# =========================
+# Model files
+# =========================
+
+*.pt
+*.pth
+*.onnx
+*.h5
+*.keras
+models/

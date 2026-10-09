@@ -1,0 +1,17 @@
+# Dependency optional untuk project lanjutan.
+# Jangan install semuanya sekaligus; pilih sesuai README project dan cek kompatibilitas
+# Windows/Python 3.12 terlebih dahulu.
+mediapipe
+pyzbar
+pycaw
+comtypes
+ultralytics
+easyocr
+pandas
+scikit-learn
+
+# Opsional dengan catatan kompatibilitas:
+# face-recognition
+# Package ini bergantung pada dlib yang sering membutuhkan compiler/build tool di Windows
+# dan dapat belum menyediakan wheel yang sesuai untuk Python 3.12. Pertimbangkan
+# OpenCV Haar Cascade atau MediaPipe untuk latihan face detection/tracking.
