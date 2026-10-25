@@ -1,13 +1,10 @@
 # Computer Vision Roadmap dengan Python
 
-Roadmap belajar Computer Vision bertahap dari dasar image processing hingga project
-intermediate seperti YOLO, OCR, pose estimation, dan pengenalan gesture.
+Roadmap belajar Computer Vision bertahap dari dasar image processing hingga project intermediate seperti YOLO, OCR, pose estimation, dan pengenalan gesture.
 
 ## Deskripsi Project
 
-Repository ini berisi materi harian, contoh kode yang sudah tersedia, dan spesifikasi
-project latihan. Fokus saat ini adalah dokumentasi belajar; implementasi project lanjutan
-dibuat bertahap setelah materi dasarnya dipahami.
+Repository ini berisi materi harian, contoh kode yang sudah tersedia, dan spesifikasi project latihan. Fokus saat ini adalah dokumentasi belajar; implementasi project lanjutan dibuat bertahap setelah materi dasarnya dipahami.
 
 ## Level
 
@@ -19,18 +16,15 @@ Sekitar 4–8 minggu dengan kecepatan 1–2 jam per hari.
 
 ## Materi yang Dipelajari
 
-Python environment, NumPy array, OpenCV image/video processing, webcam, detection,
-tracking, OCR, pose estimation, dan machine learning dasar.
+Python environment, NumPy array, OpenCV image/video processing, webcam, detection, tracking, OCR, pose estimation, dan machine learning dasar.
 
 ## Library yang Digunakan
 
-OpenCV, NumPy, Matplotlib, serta dependency optional MediaPipe, Ultralytics, OCR,
-pycaw, pandas, dan scikit-learn.
+OpenCV, NumPy, Matplotlib, serta dependency optional MediaPipe, Ultralytics, OCR, pycaw, pandas, dan scikit-learn.
 
 ## Instalasi
 
-Gunakan [requirements.txt](requirements.txt) untuk dependency utama. Dependency optional
-dipasang per project dari [requirements-optional.txt](requirements-optional.txt).
+Gunakan [requirements.txt](requirements.txt) untuk dependency utama. Dependency optional dipasang per project dari [requirements-optional.txt](requirements-optional.txt).
 
 ## Tujuan Roadmap
 
@@ -62,9 +56,7 @@ Jika PowerShell memblokir script, gunakan Command Prompt:
 .venv\Scripts\activate.bat
 ```
 
-Dependency khusus project ada di [requirements-optional.txt](requirements-optional.txt).
-Instal hanya dependency yang diperlukan dan jangan menjalankan instalasi otomatis tanpa
-memeriksa kompatibilitasnya.
+Dependency khusus project ada di [requirements-optional.txt](requirements-optional.txt). Instal hanya dependency yang diperlukan dan jangan menjalankan instalasi otomatis tanpa memeriksa kompatibilitasnya.
 
 ## Struktur Folder
 
@@ -111,21 +103,18 @@ Folder `.venv/`, output, model, video, dan dataset lokal tidak diunggah ke Git.
 
 ## Tugas Harian
 
-Ikuti tugas harian pada README setiap folder. Selesaikan satu tahap, jalankan eksperimen,
-catat error/solusi, lalu lanjut ke tahap berikutnya.
+Ikuti tugas harian pada README setiap folder. Selesaikan satu tahap, jalankan eksperimen, catat error/solusi, lalu lanjut ke tahap berikutnya.
 
 ## Checklist Project
 
-- [ ] Menyelesaikan setup dan image basics.
+- [x] Menyelesaikan setup dan image basics.
 - [ ] Menyelesaikan webcam basics.
 - [ ] Menyelesaikan project sesuai urutan.
 - [ ] Menulis catatan eksperimen untuk setiap tahap.
 
 ## Expected Output
 
-Setiap tahap menghasilkan pemahaman konsep, output yang dapat diamati, dan catatan
-reproduksi. Project yang belum memiliki script tidak dianggap selesai hanya karena README
-sudah tersedia.
+Setiap tahap menghasilkan pemahaman konsep, output yang dapat diamati, dan catatan reproduksi. Project yang belum memiliki script tidak dianggap selesai hanya karena README sudah tersedia.
 
 ## Troubleshooting
 
@@ -137,7 +126,7 @@ sudah tersedia.
 ## Daftar Project
 
 | Project | Level | Fokus |
-|---|---|---|
+| --- | --- | --- |
 | [01 Color Detection](projects/01-color-detection/README.md) | Beginner | HSV, mask, contour |
 | [02 Face Detection](projects/02-face-detection/README.md) | Beginner | Haar Cascade |
 | [03 QR Code Scanner](projects/03-qr-code-scanner/README.md) | Beginner | QR dan riwayat scan |
@@ -177,15 +166,11 @@ sudah tersedia.
 
 ## Catatan Penggunaan Webcam
 
-Pastikan kamera tidak sedang dipakai aplikasi lain. Gunakan `q` atau tombol yang
-dijelaskan oleh program untuk berhenti, lalu selalu panggil `release()` dan
-`destroyAllWindows()`. Jangan merekam orang tanpa pemberitahuan.
+Pastikan kamera tidak sedang dipakai aplikasi lain. Gunakan `q` atau tombol yang dijelaskan oleh program untuk berhenti, lalu selalu panggil `release()` dan `destroyAllWindows()`. Jangan merekam orang tanpa pemberitahuan.
 
 ## Catatan Privasi
 
-Wajah, plat nomor, rekaman webcam, dan data kehadiran adalah data sensitif. Gunakan data
-dengan persetujuan, simpan lokal secara aman, samarkan hasil saat dibagikan, dan jangan
-mengunggah dataset atau rekaman pengguna ke repository publik.
+Wajah, plat nomor, rekaman webcam, dan data kehadiran adalah data sensitif. Gunakan data dengan persetujuan, simpan lokal secara aman, samarkan hasil saat dibagikan, dan jangan mengunggah dataset atau rekaman pengguna ke repository publik.
 
 ## Cara Menjalankan Project
 
@@ -197,8 +182,7 @@ python day-01-setup\check_enviroment.py
 python day-02-image-basics\image_basics.py
 ```
 
-Project yang belum memiliki script hanya memiliki roadmap dokumentasi; script dibuat pada
-fase belajar berikutnya.
+Project yang belum memiliki script hanya memiliki roadmap dokumentasi; script dibuat pada fase belajar berikutnya.
 
 ## Cara Melakukan Commit Git
 
@@ -209,15 +193,8 @@ git commit -m "docs: lengkapi computer vision roadmap"
 git log --oneline -5
 ```
 
-Periksa `git diff --cached` sebelum commit dan jangan pernah menambahkan `.venv`,
-credential, rekaman, dataset pribadi, atau model besar.
+Periksa `git diff --cached` sebelum commit dan jangan pernah menambahkan `.venv`, credential, rekaman, dataset pribadi, atau model besar.
 
 ## Catatan Belajar
 
-Tanggal:
-Materi:
-Hal yang dipahami:
-Error:
-Solusi:
-Eksperimen:
-Dokumentasi yang dibaca:
+Tanggal: Materi: Hal yang dipahami: Error: Solusi: Eksperimen: Dokumentasi yang dibaca:

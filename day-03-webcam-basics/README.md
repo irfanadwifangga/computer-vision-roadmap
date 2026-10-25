@@ -2,9 +2,7 @@
 
 ## Tujuan
 
-Memahami loop frame real-time menggunakan webcam, menghitung FPS, dan menyimpan video
-dengan `VideoWriter`. Hasil akhirnya adalah rancangan aplikasi webcam yang berhenti
-dengan aman.
+Memahami loop frame real-time menggunakan webcam, menghitung FPS, dan menyimpan video dengan `VideoWriter`. Hasil akhirnya adalah rancangan aplikasi webcam yang berhenti dengan aman.
 
 ## Level
 
@@ -43,7 +41,7 @@ python -m pip install -r ..\requirements.txt
 ## Struktur Folder
 
 ```text
-day-03-webcam-basics/
+day-03-webcam-basics/****
 └── README.md
 ```
 
@@ -54,7 +52,7 @@ day-03-webcam-basics/
 - Materi: membuka kamera, membaca frame, dan keluar dengan tombol `q`.
 - Tugas coding: buat script latihan lokal tanpa menyimpan video dahulu.
 - Target hasil: preview webcam tampil dan berhenti tanpa crash.
-- Checklist: [ ] Capture [ ] Preview [ ] `q` [ ] Release
+- Checklist: [x] Capture [x] Preview [x] `q` [x] Release
 
 ### Hari 2
 
@@ -65,11 +63,11 @@ day-03-webcam-basics/
 
 ## Checklist Project
 
-- [ ] Cek `isOpened()`.
-- [ ] Tangani frame gagal dibaca.
-- [ ] Tampilkan FPS.
-- [ ] Gunakan `waitKey()` dengan benar.
-- [ ] Panggil `release()` dan `destroyAllWindows()`.
+- [x] Cek `isOpened()`.
+- [x] Tangani frame gagal dibaca.
+- [x] Tampilkan FPS.
+- [x] Gunakan `waitKey()` dengan benar.
+- [x] Panggil `release()` dan `destroyAllWindows()`.
 - [ ] Uji penyimpanan video.
 
 ## Cara Menjalankan
@@ -82,8 +80,7 @@ python day-03-webcam-basics\nama_script.py
 
 ## Expected Output
 
-Jendela video real-time tampil, FPS terlihat bila diaktifkan, dan tombol `q` menutup
-jendela serta menghasilkan file video bila recording diaktifkan.
+Jendela video real-time tampil, FPS terlihat bila diaktifkan, dan tombol `q` menutup jendela serta menghasilkan file video bila recording diaktifkan.
 
 ## Troubleshooting
 
@@ -94,16 +91,8 @@ jendela serta menghasilkan file video bila recording diaktifkan.
 
 ## Catatan Keamanan dan Privasi
 
-Webcam dapat merekam wajah dan lingkungan sekitar. Minta persetujuan, hindari merekam
-layar/data sensitif, dan simpan video di lokasi lokal yang aman.
+Webcam dapat merekam wajah dan lingkungan sekitar. Minta persetujuan, hindari merekam layar/data sensitif, dan simpan video di lokasi lokal yang aman.
 
 ## Catatan Belajar
 
-Tanggal:
-Materi:
-Hal yang dipahami:
-Error:
-Solusi:
-Eksperimen:
-Dokumentasi yang dibaca:
-
+Tanggal: Materi: Hal yang dipahami: Error: Solusi: Eksperimen: Dokumentasi yang dibaca:
