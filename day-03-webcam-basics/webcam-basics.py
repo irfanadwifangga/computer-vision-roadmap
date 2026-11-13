@@ -1,5 +1,6 @@
 import sys
 import time
+from pathlib import Path
 
 import cv2 as cv
 
@@ -9,11 +10,18 @@ if not cap.isOpened():
     print("Cannot open camera")
     sys.exit()
 
-# used to record the time when processed last frame
-prev_frame_time = 0
+# getting the width and height of the frame
+frame_width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH))
+frame_height = int(cap.get(cv.CAP_PROP_FRAME_HEIGHT))
 
-# used to record the time when processed current frame
-new_frame_time = 0
+# used to set the output path to save the video
+output_path = Path(__file__).parent / "output.mp4"
+
+fourcc = cv.VideoWriter_fourcc(*"mp4v")
+out = cv.VideoWriter(str(output_path), fourcc, 20.0, (frame_width, frame_height))
+
+# used to record the time when processed last frame
+prev_frame_time = time.time()
 
 while cap.isOpened():
     # Capturing frame by frame
@@ -24,37 +32,36 @@ while cap.isOpened():
         print("Can't receive frame (stream end?). Exiting ...")
         break
 
-    # Our operations on the frame come here
-    gray = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-
+    # used to record the time when processed current frame
     new_frame_time = time.time()
 
-    # Calculating the fps
-
-    # fps will be number of frame processed in given time frame
-    # since their will be most of time error of 0.001 second
-    # we will be subtracting it to get more accurate result
-    fps = 1 / (new_frame_time - prev_frame_time)
+    # calculating the fps
+    time_diff = new_frame_time - prev_frame_time
+    fps = int(1 / time_diff) if time_diff > 0 else 0
     prev_frame_time = new_frame_time
 
-    # Converting the fps to integer
-    fps = int(fps)
-
-    # converting the fps to string so that we can display it on frame
-    # by using putText function
-    fps = f"FPS: {fps}"
-
-    # putting the FPS count on the frame
+    # show the fps on the frame
     cv.putText(
-        gray, fps, (7, 40), cv.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 3, cv.LINE_AA
+        frame,
+        f"FPS: {fps}",
+        (10, 40),
+        cv.FONT_HERSHEY_SIMPLEX,
+        1,
+        (0, 255, 0),
+        2,
+        cv.LINE_AA,
     )
 
-    # Display the resulting frame
-    cv.imshow("frame", gray)
+    # write the frame to the output video file
+    out.write(frame)
+
+    # display the resulting frame
+    cv.imshow("frame", frame)
     if cv.waitKey(1) == ord("q"):
         break
 
 
 # When everything done, release the capture
 cap.release()
+out.release()
 cv.destroyAllWindows()

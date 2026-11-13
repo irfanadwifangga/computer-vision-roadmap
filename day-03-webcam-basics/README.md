@@ -59,7 +59,7 @@ day-03-webcam-basics/****
 - Materi: FPS dan VideoWriter.
 - Tugas coding: tampilkan FPS dan simpan video ke file lokal.
 - Target hasil: video dapat diputar dan resource selalu dilepas.
-- Checklist: [ ] FPS [ ] Codec [ ] Writer [ ] Cleanup
+- Checklist: [x] FPS [x] Codec [x] Writer [x] Cleanup
 
 ## Checklist Project
 
