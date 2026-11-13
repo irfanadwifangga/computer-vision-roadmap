@@ -68,7 +68,7 @@ day-03-webcam-basics/****
 - [x] Tampilkan FPS.
 - [x] Gunakan `waitKey()` dengan benar.
 - [x] Panggil `release()` dan `destroyAllWindows()`.
-- [ ] Uji penyimpanan video.
+- [x] Uji penyimpanan video.
 
 ## Cara Menjalankan
 
